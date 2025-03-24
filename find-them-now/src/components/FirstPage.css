@@ -1,0 +1,59 @@
+/* Dark theme background and text */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Center the entire content */
+.first-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+/* Title styling */
+.first-page h1 {
+  font-size: 3.5em;
+  margin-bottom: 40px;
+  color: #4CAF50; /* Green accent color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Role selection buttons container */
+.role-selection {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+/* Button styling */
+.role-selection button {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #1f1f1f; /* Dark button background */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Button hover effect */
+.role-selection button:hover {
+  background-color: #4CAF50; /* Green background on hover */
+  color: #121212; /* Dark text on hover */
+  transform: translateY(-5px); /* Slight lift */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Button active effect */
+.role-selection button:active {
+  transform: translateY(0); /* Reset lift */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
